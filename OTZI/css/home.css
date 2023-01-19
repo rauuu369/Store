@@ -1,0 +1,48 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #ded7c9;
+}
+
+.logo{
+    float: left;
+    width: 13%;
+}
+
+.title{
+    font-size: 55px;
+    color: #0d1b30;
+    padding-left: 30px;
+}
+
+.enlaces{
+    margin-top: 15px;
+    float: right;
+    width: 70%;
+}
+ul{
+    width: 100%;
+}
+
+li{
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    color: #0d1b30;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.options{
+    margin-top: 2px;
+    float: left;
+}
+
+.account{
+    margin-top: 2px;
+    float: right;
+}
+

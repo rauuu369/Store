@@ -23,11 +23,7 @@ body{
     float: right;
     width: 70%;
 }
-ul{
-    width: 100%;
-}
-
-li{
+a{
     font-size: 22px;
     font-family: 'Oswald', sans-serif;
     color: #0d1b30;

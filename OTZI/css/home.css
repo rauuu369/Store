@@ -3,17 +3,22 @@
     margin: 0px;
 }
 
+header{
+    height: 60px;
+}
+
 body{
     background-color: #ded7c9;
 }
 
 .logo{
     float: left;
+    height: 60px;
     width: 13%;
 }
 
 .title{
-    font-size: 55px;
+    font-size: 53px;
     color: #0d1b30;
     padding-left: 30px;
 }
@@ -25,7 +30,7 @@ body{
 }
 
 a{
-    font-size: 22px;
+    font-size: 17px;
     font-family: 'Oswald', sans-serif;
     color: #0d1b30;
     display: inline-block;
@@ -35,12 +40,14 @@ a{
 
 .options{
     margin-top: 2px;
+    font-weight: bold;
+    display: flex;
     float: left;
 }
 
 .account{
     margin-top: 2px;
+    font-weight: bold;
     float: right;
 }
-
 

@@ -9,7 +9,7 @@ header{
 }
 
 body{
-    background-color: #ded7c9;
+    background-color: black;
 }
 
 .logo{
@@ -19,8 +19,8 @@ body{
 }
 
 .title{
-    font-size: 53px;
-    color: #0d1b30;
+    font-size: 54px;
+    color: #ded7c9;
     padding-left: 30px;
     text-decoration: none;
 }
@@ -34,7 +34,7 @@ body{
 .options, .account{
     font-size: 17px;
     font-family: 'Oswald', sans-serif;
-    color: #0d1b30;
+    color: #ded7c9;
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
@@ -48,8 +48,17 @@ body{
 }
 
 .account{
+    padding-left: 40px;
     margin-top: 2px;
     font-weight: bold;
     float: right;
+}
+
+li{
+    float: left;
+}
+
+nav a:hover{
+    color: white;
 }
 

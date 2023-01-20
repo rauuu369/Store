@@ -5,6 +5,7 @@
 
 header{
     height: 60px;
+    align-items: center;
 }
 
 body{
@@ -21,6 +22,7 @@ body{
     font-size: 53px;
     color: #0d1b30;
     padding-left: 30px;
+    text-decoration: none;
 }
 
 .links{
@@ -29,7 +31,7 @@ body{
     width: 70%;
 }
 
-a{
+.options, .account{
     font-size: 17px;
     font-family: 'Oswald', sans-serif;
     color: #0d1b30;

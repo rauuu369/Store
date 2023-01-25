@@ -6,6 +6,7 @@
 header{
     height: 60px;
     align-items: center;
+    margin: auto;
 }
 
 body{
@@ -26,39 +27,42 @@ body{
 }
 
 .links{
-    margin-top: 15px;
+    margin-top: 10px;
     float: right;
     width: 70%;
 }
 
-.options, .account{
+/*Options menu (style)*/
+
+ul, ol{
+    list-style: none;
+}
+
+.nav li a:hover{
+    background-color: rgba(65, 63, 63, 0.918);
+}
+
+.nav li a {
+    background-color: black;
+    padding:10px;
     font-size: 17px;
     font-family: 'Oswald', sans-serif;
     color: #ded7c9;
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
 }
 
-.options{
-    margin-top: 2px;
-    font-weight: bold;
-    display: flex;
+.nav > li {
     float: left;
 }
 
-.account{
-    padding-left: 40px;
-    margin-top: 2px;
-    font-weight: bold;
-    float: right;
+.nav li ul {
+    display:none;
+    position: absolute;
+    min-width: 220px;
 }
 
-li{
-    float: left;
+.nav li:hover > ul {
+    display: block;
 }
-
-nav a:hover{
-    color: white;
-}
-

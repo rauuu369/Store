@@ -16,7 +16,7 @@ body{
 .logo{
     float: left;
     height: 60px;
-    width: 13%;
+    width: 14%;
 }
 
 .title{
@@ -27,9 +27,8 @@ body{
 }
 
 .links{
-    margin-top: 10px;
-    float: right;
-    width: 70%;
+    float: left;
+    width: 695px;
 }
 
 /*Options menu (style)*/
@@ -44,7 +43,7 @@ ul, ol{
 
 .nav li a {
     background-color: black;
-    padding:10px;
+    padding:20px 15px;
     font-size: 17px;
     font-family: 'Oswald', sans-serif;
     color: #ded7c9;
@@ -64,5 +63,45 @@ ul, ol{
 }
 
 .nav li:hover > ul {
+    display: block;
+}
+
+/*account style*/
+
+.account{
+    width: 100px;
+    float: left;
+}
+
+.account a:hover{
+    background-color: rgba(65, 63, 63, 0.918);
+}
+
+.nav2 li a:hover{
+    background-color: rgba(65, 63, 63, 0.918);
+}
+
+.nav2 li a {
+    background-color: black;
+    padding:20px 15px;
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+    color: #ded7c9;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.nav2 > li {
+    float: left;
+}
+
+.nav2 li ul {
+    display:none;
+    position: absolute;
+    min-width: 220px;
+}
+
+.nav2 li:hover > ul {
     display: block;
 }

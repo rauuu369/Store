@@ -28,7 +28,7 @@ body{
 
 .links{
     float: left;
-    width: 695px;
+    width: 560px;
 }
 
 /*Options menu (style)*/
@@ -44,7 +44,7 @@ ul, ol{
 .nav li a {
     background-color: black;
     padding:20px 15px;
-    font-size: 17px;
+    font-size: 14px;
     font-family: 'Oswald', sans-serif;
     color: #ded7c9;
     text-decoration: none;
@@ -59,18 +59,18 @@ ul, ol{
 .nav li ul {
     display:none;
     position: absolute;
-    min-width: 220px;
+    min-width: 180px;
 }
 
 .nav li:hover > ul {
     display: block;
 }
 
-/*account style*/
+/*Account style*/
 
 .account{
     width: 100px;
-    float: left;
+    float: right;
 }
 
 .account a:hover{
@@ -84,7 +84,7 @@ ul, ol{
 .nav2 li a {
     background-color: black;
     padding:20px 15px;
-    font-size: 17px;
+    font-size: 14px;
     font-family: 'Oswald', sans-serif;
     color: #ded7c9;
     text-decoration: none;
@@ -104,4 +104,47 @@ ul, ol{
 
 .nav2 li:hover > ul {
     display: block;
+}
+
+/*style of the search engine and its icon.*/
+
+.search{
+    height: 60px;
+    width: 350px;
+    float: left;
+}
+
+section{
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+
+}
+
+form{
+    margin: auto;
+}
+
+form > div {
+    display: flex;
+    background: #ffff;
+    padding: 9px 10px 9px 10px;
+    border-radius: 30px;
+    border: 2px solid #cad3dc;
+}
+
+form input {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    padding-left: 24px;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    width: 250px;
+}
+
+form input:focus {
+    outline: none;
 }

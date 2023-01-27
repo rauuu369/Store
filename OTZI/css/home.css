@@ -22,13 +22,21 @@ body{
 .title{
     font-size: 54px;
     color: #ded7c9;
+    padding-left: 60px;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 54px;
+    color: #ded7c9;
     padding-left: 30px;
     text-decoration: none;
+    font-family: 'Heebo', sans-serif;
 }
 
 .links{
     float: left;
-    width: 560px;
+    width: 650px;
 }
 
 /*Options menu (style)*/
@@ -43,9 +51,9 @@ ul, ol{
 
 .nav li a {
     background-color: black;
-    padding:20px 15px;
+    padding:20px 25px;
     font-size: 14px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Heebo', sans-serif;
     color: #ded7c9;
     text-decoration: none;
     display: block;
@@ -85,7 +93,7 @@ ul, ol{
     background-color: black;
     padding:20px 15px;
     font-size: 14px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Heebo', sans-serif;;
     color: #ded7c9;
     text-decoration: none;
     display: block;
@@ -110,7 +118,7 @@ ul, ol{
 
 .search{
     height: 60px;
-    width: 350px;
+    width: 650px;
     float: left;
 }
 
@@ -142,7 +150,7 @@ form input {
     background-image: url(../images/search.png);
     background-repeat: no-repeat;
     background-size: 16px;
-    width: 250px;
+    width: 550px;
 }
 
 form input:focus {

@@ -174,12 +174,20 @@ form input:focus {
 }
 
 /*clothing style*/
-.row{
-    width: 800px;
-    height: 900px;
+
+.garment{
+    text-align:center;
 }
 
 .homegarment{
-    width: 550px;
-    height: 550px;
+    width: 560px;
+    height: 560px;
+    text-align:center;
+}
+
+.four_columns{
+    width: 634.3px;
+    height: 800px;
+    float: left;
+
 }

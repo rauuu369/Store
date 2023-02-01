@@ -37,17 +37,19 @@ h1{
 h2{
     font-size: 20px;
     color: #ded7c9;
-    padding-left: 30px;
+    padding-left: 36px;
     text-decoration: none;
     font-family: 'Heebo', sans-serif;
+    text-align: left;
 }
 
 p{
     font-size: 20px;
     color: #ded7c9;
-    padding-left: 30px;
+    padding-left: 36px;
     text-decoration: none;
     font-family: 'Heebo', sans-serif;
+    text-align: left;
 }
 
 .links{
@@ -167,6 +169,7 @@ form input {
     background-repeat: no-repeat;
     background-size: 16px;
     width: 550px;
+    
 }
 
 form input:focus {
@@ -179,7 +182,37 @@ form input:focus {
     text-align:center;
 }
 
-.homegarment{
+.men_menu, .woman_menu, .kid_menu{
+    height: audio;
+    width: auto;
+}
+
+.container{
+    width: 1903px;
+    height: 680px;
+
+}
+
+.container-garment{
+    width: 560px;
+    height: 560px;
+    text-align:center;
+    margin: auto;
+    position: relative;
+
+}
+
+.container-garment img {
+    position: absolute;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container-garment img.top:hover {
+    opacity: 0;
+}
+
+.homegarment, .top{
     width: 560px;
     height: 560px;
     text-align:center;
@@ -187,7 +220,9 @@ form input:focus {
 
 .four_columns{
     width: 634.3px;
-    height: 800px;
+    height: 650px;
     float: left;
 
 }
+
+

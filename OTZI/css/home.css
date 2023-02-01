@@ -3,10 +3,17 @@
     margin: 0px;
 }
 
-header{
+.header{
+    background-color: black;
     height: 60px;
+    width: 1903px;
     align-items: center;
     margin: auto;
+    position: fixed;
+}
+
+.initial_clothing{
+    padding-top: 60px;
 }
 
 body{
@@ -69,7 +76,7 @@ ul, ol{
 
 .nav li a {
     background-color: black;
-    padding:20px 25px;
+    padding:19.5px 25px;
     font-size: 14px;
     font-family: 'Heebo', sans-serif;
     color: #ded7c9;
@@ -109,7 +116,7 @@ ul, ol{
 
 .nav2 li a {
     background-color: black;
-    padding:20px 15px;
+    padding:19.5px 25px;
     font-size: 14px;
     font-family: 'Heebo', sans-serif;;
     color: #ded7c9;
@@ -198,21 +205,10 @@ form input:focus {
     height: 560px;
     text-align:center;
     margin: auto;
-    position: relative;
 
 }
 
-.container-garment img {
-    position: absolute;
-    left: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.container-garment img.top:hover {
-    opacity: 0;
-}
-
-.homegarment, .top{
+.top{
     width: 560px;
     height: 560px;
     text-align:center;

@@ -189,7 +189,7 @@ form input:focus {
     text-align:center;
 }
 
-.men_menu, .woman_menu, .kid_menu{
+.men_menu, .woman_menu{
     height: audio;
     width: auto;
 }

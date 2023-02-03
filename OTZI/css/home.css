@@ -20,6 +20,14 @@ body{
     background-color: black;
 }
 
+.footer{
+    height: 70px;
+    width: 1903px;
+    background-color: rgb(48, 47, 47);
+    padding-top: 15px;
+    
+}
+
 .logo{
     float: left;
     height: 60px;

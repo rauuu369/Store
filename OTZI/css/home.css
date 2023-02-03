@@ -196,13 +196,13 @@ form input:focus {
 
 .container{
     width: 1903px;
-    height: 680px;
+    height: 780px;
 
 }
 
 .container-garment{
     width: 560px;
-    height: 560px;
+    height: 680px;
     text-align:center;
     margin: auto;
 
@@ -210,13 +210,13 @@ form input:focus {
 
 .top{
     width: 560px;
-    height: 560px;
+    height: 680px;
     text-align:center;
 }
 
 .four_columns{
     width: 634.3px;
-    height: 650px;
+    height: 680px;
     float: left;
 
 }

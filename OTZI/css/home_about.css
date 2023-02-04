@@ -1,0 +1,222 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header{
+    background-color: black;
+    height: 60px;
+    width: 1903px;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+}
+
+.initial_clothing{
+    padding-top: 60px;
+}
+
+body{
+    background-color: black;
+}
+
+.footer{
+    height: 50px;
+    max-width: 1903px;
+    background-color: rgb(48, 47, 47);
+    padding-top: 20px;
+    text-align: center;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    
+    
+}
+
+.logo{
+    float: left;
+    height: 60px;
+    width: 14%;
+}
+
+.title{
+    font-size: 54px;
+    color: #ded7c9;
+    padding-left: 60px;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 30px;
+    color: #ded7c9;
+    padding-left: 25px;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+}
+
+h2{
+    font-size: 50px;
+    color: #ded7c9;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-size: 25px;
+    color: #ded7c9;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
+
+.homeprice{
+    width: 80px;
+}
+
+p{
+    font-size: 20px;
+    color: #ded7c9;
+    margin-left: 36px;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+    text-align: left;
+}
+
+.links{
+    float: left;
+    width: 650px;
+}
+
+/*Options menu (style)*/
+
+ul, ol{
+    list-style: none;
+}
+
+.nav li a:hover{
+    background-color: rgba(65, 63, 63, 0.918);
+}
+
+.nav li a {
+    background-color: black;
+    padding:19.5px 25px;
+    font-size: 14px;
+    font-family: 'Heebo', sans-serif;
+    color: #ded7c9;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    cursor:pointer; 
+    cursor: hand;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav li ul {
+    display:none;
+    position: absolute;
+    min-width: 180px;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+/*Account style*/
+
+.account{
+    width: 100px;
+    float: right;
+}
+
+.account a:hover{
+    background-color: rgba(65, 63, 63, 0.918);
+}
+
+.nav2 li a:hover{
+    background-color: rgba(65, 63, 63, 0.918);
+}
+
+.nav2 li a {
+    background-color: black;
+    padding:19.5px 25px;
+    font-size: 14px;
+    font-family: 'Heebo', sans-serif;;
+    color: #ded7c9;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    cursor:pointer; 
+    cursor: hand;
+}
+
+.nav2 > li {
+    float: left;
+}
+
+.nav2 li ul {
+    display:none;
+    position: absolute;
+    min-width: 220px;
+}
+
+.nav2 li:hover > ul {
+    display: block;
+}
+
+/*Style of the search engine and its icon.*/
+
+.search{
+    height: 60px;
+    width: 650px;
+    float: left;
+}
+
+section{
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+
+}
+
+form{
+    margin: auto;
+}
+
+form > div {
+    display: flex;
+    background: #ffff;
+    padding: 9px 10px 9px 10px;
+    border-radius: 30px;
+    border: 2px solid #cad3dc;
+}
+
+form input {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    padding-left: 24px;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    width: 550px;
+    
+}
+
+form input:focus {
+    outline: none;
+}
+
+.about{
+    margin-left: 200px;
+    margin-right: 200px;
+}

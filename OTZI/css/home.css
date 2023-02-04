@@ -21,10 +21,12 @@ body{
 }
 
 .footer{
-    height: 70px;
-    width: 1903px;
+    height: 50px;
+    max-width: 1903px;
     background-color: rgb(48, 47, 47);
-    padding-top: 15px;
+    padding-top: 20px;
+    text-align: center;
+    
     
 }
 
@@ -227,6 +229,10 @@ form input:focus {
     height: 680px;
     float: left;
 
+}
+
+.redes{
+    padding-left: 3.5em;
 }
 
 

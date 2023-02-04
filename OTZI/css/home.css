@@ -26,6 +26,8 @@ body{
     background-color: rgb(48, 47, 47);
     padding-top: 20px;
     text-align: center;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     
     
 }
@@ -54,16 +56,21 @@ h1{
 h2{
     font-size: 20px;
     color: #ded7c9;
-    padding-left: 36px;
+    margin-left: 36px;
     text-decoration: none;
     font-family: 'Heebo', sans-serif;
     text-align: left;
+    width: 230px;
+}
+
+.homeprice{
+    width: 80px;
 }
 
 p{
     font-size: 20px;
     color: #ded7c9;
-    padding-left: 36px;
+    margin-left: 36px;
     text-decoration: none;
     font-family: 'Heebo', sans-serif;
     text-align: left;
@@ -93,6 +100,8 @@ ul, ol{
     text-decoration: none;
     display: block;
     font-weight: bold;
+    cursor:pointer; 
+    cursor: hand;
 }
 
 .nav > li {
@@ -133,6 +142,8 @@ ul, ol{
     text-decoration: none;
     display: block;
     font-weight: bold;
+    cursor:pointer; 
+    cursor: hand;
 }
 
 .nav2 > li {
@@ -232,8 +243,13 @@ form input:focus {
 }
 
 .redes{
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.redes, .top, h2, .homeprice{
+    cursor:pointer; 
+    cursor: hand;
 }
 
 

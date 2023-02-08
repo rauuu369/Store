@@ -53,15 +53,13 @@ h1{
     font-family: 'Heebo', sans-serif;
 }
 
-h2{
-    font-size: 50px;
+.otzi{
+    font-size: 60px;
     color: #ded7c9;
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
     text-decoration: none;
-    font-family: 'Heebo', sans-serif;
-    text-align: center;
 }
 
 h3{
@@ -219,4 +217,8 @@ form input:focus {
 .about{
     margin-left: 200px;
     margin-right: 200px;
+}
+
+.about_title{
+    text-align: center;
 }

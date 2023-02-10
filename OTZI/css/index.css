@@ -7,10 +7,68 @@ body{
     background-color: black;
 }
 
-h3{
-    font-size: 30px;
-    color: #ded7c9;
-    padding-left: 25px;
-    text-decoration: none;
-    font-family: 'Heebo', sans-serif;
+.video_login{
+    width: 50%;
+    height: 900px;
+    text-align:center;
+    margin-top: 36.5px;
+    float: left;
 }
+
+.welcome_login{
+    width: 50%;
+    height: 900px;
+    margin-top: 36.5px;
+    float: left;
+}
+
+.sing_in{
+    width: 450px;
+    padding-left: 5em;
+    padding-top: 8em;
+}
+
+.question{
+    width: 450px;
+    padding-left: 5em;
+    padding-top: 1em;
+}
+
+form{
+    width: 800px;
+    height: 600px;
+    padding-top: 40px;
+}
+
+h1{
+    font-size: 50px;
+    color: #ded7c9;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+}
+
+h2, a{
+    font-size: 20px;
+    color: #ded7c9;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+}
+
+label{
+    font-size: 15px;
+    color: #ded7c9;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    padding-left: 5em;
+}
+
+input[type="text"], input[type="password"]{
+    outline: none;
+    padding: 20px;
+    display: block;
+    width: 310px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    margin: 3px 2em 2em 76px;
+}
+

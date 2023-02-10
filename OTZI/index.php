@@ -8,15 +8,29 @@
     <link rel="icon" href="images/Logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
-    <title>About Us - OTZI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>Login - OTZI</title>
 </head>
 <body>
-    <div class="initial_clothing">
-        
+    <div class="container">
+    <div class="video_login">
+        <video src="images/login.mp4" width=50% height=850px autoplay muted loop></video>
     </div>
-    <div class="about">
-        <h3>Our family of brands and businesses is dedicated to making it easy for customers around the world to express their unique style through fashion and design. With a wide variety of products from our own in-house lines, as well as collaborations with leading designers, we have something for everyone.</h3>
+    <div class="welcome_login">
+        <div class="sing_in">
+            <h1>Welcome to OTZI, Sing In to Continue.</h1>
+        </div>
+        <div class="question">
+            <h2>Don't have an account? <a href="">Create a account</a> It takes less than a minute.</h2>
+        </div>
+        <form action="login.php" method="post">
+            <label for="">Email</label>
+            <input type="text" name="email" placeholder="Enter your mail">
+            <label for="">Password</label>
+            <input type="password" name="password" placeholder="Enter your password">
+            <input type="submit" value="Sing In">
+        </form>
+    </div>
     </div>
 </body>
 </html>

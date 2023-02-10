@@ -6,3 +6,87 @@
 body{
     background-color: black;
 }
+
+.video_login{
+    width: 50%;
+    height: 900px;
+    text-align:center;
+    margin-top: 36.5px;
+    float: left;
+}
+
+.welcome_login{
+    width: 50%;
+    height: 900px;
+    margin-top: 36.5px;
+    float: left;
+}
+
+.sing_in{
+    width: 475px;
+    padding-left: 5em;
+    padding-top: 8em;
+}
+
+.question{
+    width: 450px;
+    padding-left: 5em;
+    padding-top: 1em;
+}
+
+form{
+    width: 800px;
+    height: 500px;
+    padding-top: 40px;
+}
+
+h1{
+    font-size: 50px;
+    color: #ded7c9;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+}
+
+h2, a{
+    font-size: 20px;
+    color: #ded7c9;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+}
+
+label{
+    font-size: 15px;
+    color: #ded7c9;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    padding-left: 5em;
+}
+
+input[type="text"], input[type="password"]{
+    outline: none;
+    padding: 20px;
+    display: block;
+    width: 610px;
+    border-radius: 3px;
+    border: 1px solid rgb(238, 234, 214);
+    margin: 3px 2em 2em 76px;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(29, 28, 28);
+    background: #e9d8b5;
+    width: 300px;
+    margin: 250px;
+    margin-top: 0px;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+}
+
+input[type="submit"]:hover {
+    background-color: #f8e0af;
+    color: rgb(49, 47, 47);
+}

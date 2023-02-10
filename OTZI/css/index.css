@@ -23,7 +23,7 @@ body{
 }
 
 .sing_in{
-    width: 450px;
+    width: 475px;
     padding-left: 5em;
     padding-top: 8em;
 }
@@ -66,9 +66,27 @@ input[type="text"], input[type="password"]{
     outline: none;
     padding: 20px;
     display: block;
-    width: 310px;
+    width: 610px;
     border-radius: 3px;
-    border: 1px solid #eee;
+    border: 1px solid rgb(238, 234, 214);
     margin: 3px 2em 2em 76px;
 }
 
+input[type="submit"]{
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(29, 28, 28);
+    background: #e9d8b5;
+    width: 300px;
+    margin: 250px;
+    margin-top: 0px;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+}
+
+input[type="submit"]:hover {
+    background-color: #f8e0af;
+    color: rgb(49, 47, 47);
+}

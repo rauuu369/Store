@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+.image_signup{
+    width: 50%;
+    height: 900px;
+    text-align:center;
+    margin-top: 36.5px;
+    float: left;
+}
+
+.welcome_signup{
+    width: 50%;
+    height: 900px;
+    margin-top: 36.5px;
+    float: left;
+}
+
+.sign_up{
+    width: 490px;
+    padding-left: 5em;
+    padding-top: 8em;
+}
+
+.question{
+    width: 450px;
+    padding-left: 5em;
+    padding-top: 1em;
+}
+
+form{
+    width: 800px;
+    height: 500px;
+    padding-top: 40px;
+}
+
+h1{
+    font-size: 50px;
+    color: #ded7c9;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+}
+
+h2, a{
+    font-size: 20px;
+    color: #ded7c9;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+}

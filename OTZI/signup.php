@@ -12,7 +12,7 @@
         $stmt->bindParam(':password', $password);
 
         if ($stmt->execute()) {
-            header('location:index.php');
+            header('location:successful.php');
         } else {
             $message = 'Sorry there must have been an issue creating your account';
     }

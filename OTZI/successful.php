@@ -18,10 +18,10 @@
     </div>
     <div class="welcome_signup">
         <div class="sign_up">
-            <h1>Create Your Account</h1>
+            <h1>User Created Successfully</h1>
         </div>
         <div class="question">
-            <h2>Enter the fields  below to get started.</h2>
+            <h2>Your user has been created, to enter press <a href="index.php">Start Session</a>.</h2>
         </div>
     </div>
     </div>

@@ -7,7 +7,7 @@ body{
     background-color: black;
 }
 
-.video_login{
+.image_signup{
     width: 50%;
     height: 900px;
     text-align:center;
@@ -15,15 +15,15 @@ body{
     float: left;
 }
 
-.welcome_login{
+.welcome_signup{
     width: 50%;
     height: 900px;
     margin-top: 36.5px;
     float: left;
 }
 
-.sing_in{
-    width: 475px;
+.sign_up{
+    width: 490px;
     padding-left: 5em;
     padding-top: 8em;
 }

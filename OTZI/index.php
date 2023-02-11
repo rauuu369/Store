@@ -21,9 +21,9 @@
             <h1>Welcome to OTZI, Sing In to Continue.</h1>
         </div>
         <div class="question">
-            <h2>Don't have an account? <a href="">Create a account</a> It takes less than a minute.</h2>
+            <h2>Don't have an account? <a href="signup.php">Create a account</a> It takes less than a minute.</h2>
         </div>
-        <form action="login.php" method="post">
+        <form action="index.php" method="post">
             <label for="">Email</label>
             <input type="text" name="email" placeholder="Enter your mail">
             <label for="">Password</label>

@@ -1,11 +1,15 @@
 <?php
 
-$conexion = mysqli_connect('localhost:3307','root','123456','user_registro');//Creamos la conexion de la base de datos.
-//("host, username, password, Base de datos")
+    $server ='localhost:3307';
+    $username ='root';
+    $password ='123456';
+    $database ='login_otzi_database';
 
-//Verificamos que la conexion se realize correctamente
-if(!$conexion){
-    die("Conexion fallida");
+try{
+    $conexion = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
+}   catch (PDOException $e) {
+    die('Connection Failed: '. $e->getMessage());
 }
+
 
 ?>

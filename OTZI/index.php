@@ -1,32 +1,3 @@
-<?php
-
-    session_start();
-
-    if (isset($_SESSION['user_id'])) {
-        header('location:homepage.php');
-    }
-
-    require 'db_conection.php';
-
-    if (!empty($_POST['email']) && !empty($_POST['password'])) {
-        $records = $conexion->prepare('SELECT id, email, password FROM users WHERE email = :email');
-        $records->bindParam(':email', $_POST['email']);
-        $records->execute();
-        $results = $records->fetch(PDO::FETCH_ASSOC);
-
-        $message = '';
-
-        if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
-            $_SESSION['user_id'] = $results['id'];
-            header("location:index.php");
-        }   else {
-            $message = 'Sorry, Those Credentials do not match';
-        }
-
-    }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,12 +23,7 @@
         <div class="question">
             <h2>Don't have an account? <a href="signup.php">Create a account</a> It takes less than a minute.</h2>
         </div>
-        <div class="question">
-            <h2><?php if(!empty($message)): ?>
-            <p> <?= $message ?></p>
-        <?php endif; ?></h2>
-        </div>
-
+        <!-- Login form-->
         <form action="index.php" method="post">
             <label for="">Email</label>
             <input type="text" name="email" placeholder="Enter your mail">

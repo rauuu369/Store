@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: black;
     color: #ded7c9;
 }
 
@@ -37,7 +37,7 @@ body{
 
 form{
     width: 800px;
-    height: 500px;
+    height: 450px;
     padding-top: 40px;
 }
 
@@ -47,7 +47,6 @@ h1{
     font-family: 'Lora', serif;
     font-weight: normal;
 }
-
 
 
 h2, a{
@@ -85,7 +84,7 @@ input[type="submit"]{
     color: rgb(29, 28, 28);
     background: #e9d8b5;
     width: 300px;
-    margin: 250px;
+    margin: 250px 250px 200px;
     margin-top: 0px;
     border: 0px;
     border-radius: 3px;

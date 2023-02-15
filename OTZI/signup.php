@@ -1,26 +1,3 @@
-<?php
-
-    require 'db_conection.php';
-
-    $message = '';
-
-    if (!empty($_POST['email']) && !empty($_POST['password'])) {
-        $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
-        $stmt = $conexion->prepare($sql);
-        $stmt->bindParam(':email', $_POST['email']);
-        $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-        $stmt->bindParam(':password', $password);
-
-        if ($stmt->execute()) {
-            header('location:successful.php');
-        } else {
-            $message = 'Sorry there must have been an issue creating your account';
-    }
-    
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,11 +12,6 @@
     <title>Sign Up - OTZI</title>
 </head>
 <body>
-
-    <?php if(!empty($message)): ?>
-        <p> <?= $message ?></p>
-    <?php endif; ?>
-
     <div class="container">
     <div class="image_signup">
         <img src="images/signup.png" width=50% height=850px >
@@ -51,6 +23,7 @@
         <div class="question">
             <h2>Enter the fields  below to get started.</h2>
         </div>
+        <!--User creation form-->
         <form action="signup.php" method="post">
             <label for="">Email</label>
             <input type="text" name="email" placeholder="Enter your mail">

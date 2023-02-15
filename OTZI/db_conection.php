@@ -5,11 +5,10 @@
     $password ='123456';
     $database ='login_otzi_database';
     /*Connection to the database*/
-try{
-    $conexion = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
-}   catch (PDOException $e) {  /*In case of error, show error message.*/
-    die('Connection Failed: '. $e->getMessage());
-}
-
-
+    $conexion=mysqli_connect($server,$username,$password,$database);
+    /*If the connection fails, send an error message*/
+    if (!$conexion) {
+        die("Failed connection")
+    }
+    
 ?>

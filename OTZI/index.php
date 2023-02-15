@@ -18,7 +18,7 @@
 
         if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
             $_SESSION['user_id'] = $results['id'];
-            header("location:homepage.php");
+            header("location:index.php");
         }   else {
             $message = 'Sorry, Those Credentials do not match';
         }
@@ -53,9 +53,9 @@
             <h2>Don't have an account? <a href="signup.php">Create a account</a> It takes less than a minute.</h2>
         </div>
 
-        <?php if(!empty($message)) : ?>
-            <p><? $message ?></p>
-        <?php endif;?>
+        <?php if(!empty($message)): ?>
+            <p> <?= $message ?></p>
+        <?php endif; ?>
 
         <form action="index.php" method="post">
             <label for="">Email</label>

@@ -52,10 +52,11 @@
         <div class="question">
             <h2>Don't have an account? <a href="signup.php">Create a account</a> It takes less than a minute.</h2>
         </div>
-
-        <?php if(!empty($message)): ?>
+        <div class="question">
+            <h2><?php if(!empty($message)): ?>
             <p> <?= $message ?></p>
-        <?php endif; ?>
+        <?php endif; ?></h2>
+        </div>
 
         <form action="index.php" method="post">
             <label for="">Email</label>

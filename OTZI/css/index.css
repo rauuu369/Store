@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: white;
     color: #ded7c9;
 }
 
@@ -47,6 +47,8 @@ h1{
     font-family: 'Lora', serif;
     font-weight: normal;
 }
+
+
 
 h2, a{
     font-size: 20px;

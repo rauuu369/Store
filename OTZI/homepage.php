@@ -1,3 +1,21 @@
+<?php
+    session_start();
+
+    require 'db_conection.php';
+
+    if (isset($_SESSION['user_id'])) {
+        $records = $conexion->prepare('SELECT id, email, password FROM users WHERE id =:id');
+        $records->bindParam(':id', $_SESSION['user_id']);
+        $records-> execute();
+        $results = $records->fetch(PDO::FETCH_ASSOC);
+        $user = null;
+
+        if (count($results) > 0) {
+            $user = $results;
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +32,7 @@
 <body>  
     <nav class="header">
             <div class="logo">
-                <a href='homepage.html'class="title">OTZI</a>
+                <a href='homepage.php'class="title">OTZI</a>
             </div>
             <div class="links">
                 <ul class="nav">
@@ -36,7 +54,7 @@
             </div>
             <div class="account">
                 <ul class="nav2">
-                    <li><a class="account2">Account</a></li>
+                    <li><a class="account2" href='logout.php'>Sign Off</a></li>
                 </ul>
             </div>
             <div class="search">

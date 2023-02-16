@@ -8,7 +8,7 @@
     $conexion=mysqli_connect($server,$username,$password,$database);
     /*If the connection fails, send an error message*/
     if (!$conexion) {
-        die("Failed connection")
+        die("Failed connection");
     }
-    
+
 ?>

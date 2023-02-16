@@ -1,3 +1,45 @@
+<?php
+    /*Database is requested*/
+    include "db_conection.php";
+
+    $message = '';
+
+    error_reporting(0);
+    session_start();
+    /*If the user exists in the database*/
+    if (isset($_SESSION["username"])) {
+        header("Location:index.php");
+    }
+
+    if (isset($_POST["submit"])) {
+        $username=$_POST["username"];
+        $email=$_POST["email"];
+        $password= md5($_POST["password"]);
+        $cpassword= md5 ($_POST["cpassword"]);
+
+        /*Password Comparison*/
+        if ($password==$cpassword) {
+            $sql="SELECT * FROM users WHERE email='$email'";
+            $result = mysqli_query($conexion, $sql);
+            /*The data is inserted and redirected*/
+            if (!$result->num_rows > 0 && !empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['cpassword'])) {
+                $sql = "INSERT INTO users (username,email,password) VALUES ('$username', '$email', '$password')";
+                $result = mysqli_query($conexion,$sql);
+
+                if ($result) {
+                    header("Location:successful.php");
+                }else {
+                    $message ='Error try again';
+                }
+            }else {
+                $message ='The email already exists or a field has not been entered correctly.';
+            }
+        }else {
+            $message ='The passwords are not the same';
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,15 +65,22 @@
         <div class="question">
             <h2>Enter the fields  below to get started.</h2>
         </div>
+        <div class="question">
+            <?php if(!empty($message)): ?>
+                <p> <?= $message?></p>
+            <?php endif;?>
+        </div>
         <!--User creation form-->
         <form action="signup.php" method="post">
+            <label for="">Username</label>
+            <input type="text" name="username" placeholder="Enter your username">
             <label for="">Email</label>
-            <input type="text" name="email" placeholder="Enter your mail">
+            <input type="email" name="email" placeholder="Enter your email">
             <label for="">Password</label>
             <input type="password" name="password" placeholder="Enter your password">
             <label for="">Confirm Password</label>
-            <input type="password" name="confirm_password" placeholder="Confirm your password">
-            <input type="submit" value="Create account" href="index.php">
+            <input type="password" name="cpassword" placeholder="Confirm your password">
+            <input type="submit" name="submit" value="Create account" href="index.php">
         </form>
     </div>
     </div>

@@ -16,27 +16,38 @@
         $email=$_POST["email"];
         $password= md5($_POST["password"]);
         $cpassword= md5 ($_POST["cpassword"]);
+                /*Password Comparison*/
+            if ($password==$cpassword) {
+                $sql="SELECT * FROM users WHERE email='$email'";
+                $result = mysqli_query($conexion, $sql);
+                    /*Entered user validation*/
+                if (!empty($_POST['username'])) {
+                    $sqli="SELECT * FROM users WHERE username='$username'";
+                    $results = mysqli_query($conexion, $sqli);
+                        /*If a user is repeated*/
+                    if (!$results->num_rows > 0) {
+                            /*The data is inserted and redirected*/
+                        if (!$result->num_rows > 0 && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['cpassword'])) {
+                            $sql = "INSERT INTO users (username,email,password) VALUES ('$username', '$email', '$password')";
+                            $result = mysqli_query($conexion,$sql);
 
-        /*Password Comparison*/
-        if ($password==$cpassword) {
-            $sql="SELECT * FROM users WHERE email='$email'";
-            $result = mysqli_query($conexion, $sql);
-            /*The data is inserted and redirected*/
-            if (!$result->num_rows > 0 && !empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['cpassword'])) {
-                $sql = "INSERT INTO users (username,email,password) VALUES ('$username', '$email', '$password')";
-                $result = mysqli_query($conexion,$sql);
-
-                if ($result) {
-                    header("Location:successful.php");
+                            if ($result) {
+                                header("Location:successful.php");
+                            }else {
+                                $message ='Error try again';
+                            }
+                        }else {
+                            $message ='The email already exists or is not correct';
+                        }
+                    }else {
+                        $message ='The username already exists';
+                    }
                 }else {
-                    $message ='Error try again';
+                    $message ='The username is not correct';
                 }
             }else {
-                $message ='The email already exists or a field has not been entered correctly.';
+                $message ='The passwords are not the same';
             }
-        }else {
-            $message ='The passwords are not the same';
-        }
     }
 ?>
 

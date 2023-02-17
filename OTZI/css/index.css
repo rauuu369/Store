@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: black;
+    background-color:black;
     color: #ded7c9;
 }
 
@@ -48,6 +48,10 @@ h1{
     font-weight: normal;
 }
 
+p{
+    color: #f0a587;
+    font-family: 'Lora', serif;
+}
 
 h2, a{
     font-size: 20px;
@@ -69,6 +73,16 @@ label{
 }
 
 input[type="text"], input[type="password"]{
+    outline: none;
+    padding: 20px;
+    display: block;
+    width: 610px;
+    border-radius: 3px;
+    border: 1px solid rgb(238, 234, 214);
+    margin: 3px 2em 2em 76px;
+}
+
+input[type="email"], input[type="email"]{
     outline: none;
     padding: 20px;
     display: block;

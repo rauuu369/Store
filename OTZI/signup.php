@@ -8,7 +8,7 @@
     session_start();
     /*If the user exists in the database*/
     if (isset($_SESSION["username"])) {
-        header("Location:index.php");
+        header("Location:homepage.php");
     }
 
     if (isset($_POST["submit"])) {

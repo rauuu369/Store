@@ -2,8 +2,8 @@
     error_reporting(0);
     session_start();
 
-    if (!isset($_SESSION["id"])) {
-        header("Location:index.php");
+    if (!isset($_SESSION['id'])) {
+        header("Location: index.php");
     }
     
 ?>
@@ -40,7 +40,7 @@
                         </ul>
                     </li>
                     <li><a>Accessories</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.php">About Us</a></li>
                 </ul>
             </div>
             <div class="account">

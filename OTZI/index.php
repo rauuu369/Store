@@ -7,8 +7,8 @@
     error_reporting(0);
     session_start();
 
-    if (isset($_SESSION["id"])) {
-        header("Location:index.php");
+    if (isset($_SESSION['id'])) {
+        header("Location: homepage.php");
     }
 
     if (isset($_POST["submit"])) {

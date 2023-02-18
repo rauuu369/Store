@@ -4,6 +4,39 @@
 
     $message = '';
 
+    error_reporting(0);
+    session_start();
+
+    if (isset($_SESSION["id"])) {
+        header("Location:index.php");
+    }
+
+    if (isset($_POST["submit"])) {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $sql="SELECT * FROM users WHERE email='$email'";
+        $resultado = mysqli_query($conexion, $sql);
+        $num = $resultado->num_rows;
+
+        if ($num>0) {
+            $row = $resultado->fetch_assoc();
+            $password_bd = $row['password'];
+            $cpassword = md5 ($password);
+
+            if ($password_bd == $cpassword) {
+                $_SESSION['id'] = $row['id'];
+                $_SESSION['email'] = $row['email'];
+
+                header("Location:homepage.php");
+            }else {
+                $message ='Wrong password';
+            }
+        }else {
+            $message ='The email does not exist';
+        }
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +72,7 @@
         <!-- Login form-->
         <form action="index.php" method="post">
             <label for="">Email</label>
-            <input type="email" name="email" placeholder="Enter your mail">
+            <input type="email" name="email" placeholder="Enter your email">
             <label for="">Password</label>
             <input type="password" name="password" placeholder="Enter your password">
             <input type="submit" name="submit" value="Sing In">

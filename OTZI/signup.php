@@ -7,7 +7,7 @@
     error_reporting(0);
     session_start();
     /*If the user exists in the database*/
-    if (isset($_SESSION["username"])) {
+    if (isset($_SESSION["id"])) {
         header("Location:homepage.php");
     }
 

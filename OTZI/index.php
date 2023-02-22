@@ -55,7 +55,7 @@
 <body>
     <div class="container">
     <div class="video_login">
-        <video src="images/login.mp4" width=50% height=850px autoplay muted loop></video>
+        <video src="images/login.mp4" autoplay muted loop></video>
     </div>
     <div class="welcome_login">
         <div class="sing_in">

@@ -10,20 +10,19 @@ body{
 
 .container{
     width: 100%;
-    height: 937px;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 2fr));
+    height: 870px;
 }
 .video_login{
     width: 50%;
-    height: 900px;
+    height: 870px;
     text-align:center;
-    margin-top: 115px;
+    margin-top: 30px;
     float: left;
 }
 
 .welcome_login{
     width: 50%;
-    height: 900px;
+    height: 870px;
     margin-top: 36.5px;
     float: left;
 }
@@ -38,6 +37,11 @@ body{
     width: 450px;
     padding-left: 5em;
     padding-top: 1em;
+}
+
+video{
+    width:50%;
+    height:850px;
 }
 
 form{
@@ -115,3 +119,7 @@ input[type="submit"]:hover {
     background-color: #f8e0af;
     color: rgb(49, 47, 47);
 }
+
+/*Responsive*/
+
+

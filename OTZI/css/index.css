@@ -10,14 +10,14 @@ body{
 
 .container{
     width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    height: 937px;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 2fr));
 }
 .video_login{
     width: 50%;
     height: 900px;
     text-align:center;
-    margin-top: 37px;
+    margin-top: 115px;
     float: left;
 }
 
